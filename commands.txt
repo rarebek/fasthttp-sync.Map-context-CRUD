@@ -1,0 +1,10 @@
+curl -X POST -d '{"id":"1", "name":"Nodirbek", "age":17}' http://localhost:8080/create
+
+curl http://localhost:8080/get?id=1
+
+curl -X PUT -d '{"id":"1", "name":"Updated Name", "age":35}' http://localhost:8080/update?id=1
+
+curl http://localhost:8080/list
+
+curl -X DELETE http://localhost:8080/delete?id=1
+
